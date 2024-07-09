@@ -1,0 +1,1 @@
+{"dependencies":[["vagrant-proxyconf",["= 2.0.10"]],["rake",[">= 0"]],["virtualbox_WSL2",["= 0.1.3"]]],"checksum":"ebde2b151bb450e524acbc069111a261c002429c16b8ed084c5f1db33498fe52","vagrant_version":"2.4.1"}

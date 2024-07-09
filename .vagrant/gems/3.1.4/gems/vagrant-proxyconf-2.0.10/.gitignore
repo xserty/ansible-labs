@@ -1,0 +1,8 @@
+/.bundle
+/.yardoc
+.vagrant
+/Gemfile.lock
+/doc
+/tmp
+vagrant-proxyconf-*.gem
+/vendor
