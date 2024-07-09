@@ -1,3 +1,16 @@
+## Requirements:
+
+* Internet connection is a must!
+* Make sure the VT support is enabled in your BIOS
+* Vagrant - 1.9.x or higher
+* Vagrant plugins:
+    - vagrant-proxyconf needed for running behind proxy
+    - virtualbox_WSL2 needed for running under WSL
+    - vagrant-vbguest automatically installs the host's VirtualBox Guest Additions
+* Ansible: latest
+* Virtualbox: latest
+
+
 # Ansible Environment:
 
 Multi-Machine Vagrant Environments:
@@ -6,19 +19,6 @@ This Vagrantfile will create 3 Centos VM's to simulate Ansible control machine a
 * Host1 - No GUI
 * Host2 - No GUI
 * ansible-host - No GUI, ansible core installed and Ansible-tower
-
-
-## Requirements:
-
-* Internet connection is a must!
-* Make sure the VT support is enabled on your BIOS
-* Vagrant - 1.9.x or higher
-* Vagrant plugins:
-    - vagrant-proxyconf needed for running behind proxy
-    - virtualbox_WSL2 needed for running under WSL
-    - vagrant-vbguest automatically installs the host's VirtualBox Guest Additions
-* Ansible: latest
-* Virtualbox: latest
 
 
 ## WSL Environment Setup
