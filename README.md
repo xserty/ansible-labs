@@ -16,9 +16,9 @@
 Multi-Machine Vagrant Environments:
 This Vagrantfile will create 3 Centos VM's to simulate Ansible control machine and 2 target hosts.
 
-* Host1 - No GUI
-* Host2 - No GUI
-* ansible-host - No GUI, ansible core installed and Ansible-tower
+* host1
+* host2
+* ansible-host
 
 
 ## WSL Environment Setup
@@ -69,11 +69,10 @@ ansible-galaxy install --ignore-certs  -r requirements.yml
 ## Connecting the dots:
 Before you run vagrant up, make sure that you updated the Vagrantfile to your desired configuration.
 Specifically use the box that are available from https://atlas.hashicorp.com/boxes/.
-The entry on the current vagrant file are Datacom specific boxes and is not available from atlas.
 
 Once you are done:
 - _vagrant up_
   Wait for about 6 minutes to finish the build. Once done. You can try to ssh to your ansible-host vm. You can verify this by using "_vagrant status_"
 
 - _vagrant ssh ansible-host_
-  once you are login to your ansible-host vm, you can now verify if the other vm are reachable. The command to use is: "_ansible-playbook -i inventory playbook/ping.yml_"
+  once you are login to your ansible-host vm, you can now verify if the other vm are reachable.
